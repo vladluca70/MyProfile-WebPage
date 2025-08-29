@@ -1,0 +1,127 @@
+.carousel-container {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f4ff, #e0e7ff);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carousel-controls button {
+  background: #ffffff;
+  border: 2px solid #4b6cb7;
+  color: #4b6cb7;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  background: #4b6cb7;
+  color: white;
+}
+
+.carousel-controls button.active {
+  background: #4b6cb7;
+  color: white;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #4b6cb7;
+  border-radius: 2px;
+}
+
+.timeline-item {
+  display: flex;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: #4b6cb7;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.timeline-content {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-left: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  width: 650px;
+  box-sizing: border-box;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #4b6cb7;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .timeline-content {
+    width:300px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 15px;
+  }
+
+  .timeline-dot {
+    left: 5px;
+  }
+
+  .timeline-content {
+    width: 100%; 
+    margin-left: 30px;
+    padding: 15px;
+  }
+
+  .carousel-controls button {
+    padding: 8px 14px;
+    margin: 0 5px;
+  }
+}
