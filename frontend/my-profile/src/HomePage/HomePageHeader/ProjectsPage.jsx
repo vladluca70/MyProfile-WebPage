@@ -9,27 +9,7 @@ function ProjectsPage() {
             highlights: "Lucrul in echipa, folosirea framework Laravel, respectare deadline",
             link:"https://github.com/vladluca70/Currency-Converter"
         },
-        {
-            title: "Project 2",
-            technologies: "Python, Flask, HTML, CSS",
-            description: "Pagina web destinata utilizatorilor care doresc sa faca comanda de alimente online. Este o platforma foarte simpla, poate fi utilizata de oricine.",
-            highlights: "Lucrul in echipa, folosirea framework Flask, respectare deadline",
-            link:"https://github.com/vladluca70/Currency-Converter"
-        },
-                {
-            title: "Project 3",
-            technologies: "Python, Flask, HTML, CSS",
-            description: "Pagina web destinata utilizatorilor care doresc sa faca comanda de alimente online. Este o platforma foarte simpla, poate fi utilizata de oricine.",
-            highlights: "Lucrul in echipa, folosirea framework Flask, respectare deadline",
-            link:"https://github.com/vladluca70/Currency-Converter"
-        },
-                {
-            title: "Project 4",
-            technologies: "Python, Flask, HTML, CSS",
-            description: "lorem Pagina web destinata utilizatorilor care doresc sa faca comanda de alimente online. Este o platforma foarte simpla, poate fi utilizata de oricine.",
-            highlights: "Lucrul in echipa, folosirea framework Flask, respectare deadline",
-            link:"https://github.com/vladluca70/Currency-Converter"
-        },
+
                 {
             title: "Project 2",
             technologies: "Python, Flask, HTML, CSS",
@@ -57,6 +37,7 @@ function ProjectsPage() {
             description: "Pagina web destinata utilizatorilor care doresc sa faca comanda de alimente online. Este o platforma foarte simpla, poate fi utilizata de oricine.",
             highlights: "Lucrul in echipa, folosirea framework Flask, respectare deadline",
             link:"https://github.com/vladluca70/Currency-Converter"
+
         }
     ];
 

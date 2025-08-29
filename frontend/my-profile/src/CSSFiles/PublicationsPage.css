@@ -1,0 +1,139 @@
+/* Container general */
+.publications-container {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Titlu pagină */
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Grid pentru carduri - maxim 3 pe rând */
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* maxim 3 carduri pe rând */
+  gap: 60px; /* spațiu între carduri */
+  justify-items: center;
+  padding: 0 10px;
+  grid-auto-rows: auto;
+}
+
+/* Card 3D */
+.pub-card {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 500px; /* lățime card */
+}
+
+.pub-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 350px; /* înălțime suficientă pentru front/back */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Flip la hover */
+.pub-card:hover .pub-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front și Back */
+.pub-card-front, .pub-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* aceeași înălțime */
+  padding: 20px;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+}
+
+/* Partea din spate */
+.pub-card-back {
+  transform: rotateY(180deg);
+  background: #007bff;
+  color: white;
+}
+
+/* Titlu publicație */
+.pub-card-front h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.pub-card-front h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #007bff;
+  margin-top: 5px;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.pub-card:hover .pub-card-front h3::after {
+  width: 80px;
+}
+
+/* Text publicație */
+.pub-card-front p {
+  margin: 6px 0;
+  color: #444;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.pub-card-front strong {
+  color: #000;
+}
+
+/* Buton download PDF */
+.download-btn {
+  padding: 12px 20px;
+  background: white;
+  color: #007bff;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.download-btn:hover {
+  transform: scale(1.1);
+  background: #e6e6e6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .publications-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 carduri pe rând */
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .publications-grid {
+    grid-template-columns: 1fr; /* 1 card pe rând */
+    gap: 30px;
+  }
+}
