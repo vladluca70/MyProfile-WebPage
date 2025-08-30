@@ -26,7 +26,7 @@ function ProjectsPage() {
             title: "Dune- Board Game",
             technologies: "Python, JSON, Jira",
             description: "Worked in a team of 30 colleagues to develop a digital version of the Dune board game, using Scrum methodology and Jira for project management. As part of the AI team, I implemented game rules in Python, managed game state with JSON, and developed adaptive AI logic based on in-game context and difficulty levels.",
-            behind_the_code: "Adaptive AI, AI logic, Team collaboration, Scrum methodology, Jira management, Python development, JSON handling, Code modularity, Algorithm design, Version control",
+            behind_the_code: "Adaptive AI, AI logic, Team collaboration, Scrum methodology, Jira management, Python development, JSON handling, Code modularity, Algorithm design, Version control, Time management",
             links: [
                 "https://github.com/AAAMON/IP-2A3-2024/tree/AI",
                 "https://github.com/adiaioana/IP-2A3-2024/tree/main"
@@ -57,6 +57,73 @@ function ProjectsPage() {
             behind_the_code: "C/C++ development, Game logic, AI decision-making algorithms, collaborative software development, Interactive UI, Testing strategies",
             links: [
                 "https://github.com/vladluca70/Fox_and_hounds",
+            ]
+        },
+        {
+            title: "IoT Project – Smart School Network & Impact in Football",
+            technologies: "Cisco Packet Tracer, Overleaf, Microsoft PowerPoint",
+            description: "Led a team of three in designing a smart school network using Cisco Packet Tracer, integrating IoT devices such as sensors, cameras, and smart displays to simulate a modern educational environment. Afterwards, I coordinated and documented a scientific research project on IoT applications in football, written in LaTeX and presented through a PowerPoint presentation.",
+            behind_the_code: "Team coordinator, Research drafting, Team collaboration, Time management, Network design",
+            links: [
+                "https://github.com/vladluca70/IoT_Project",
+                "https://www.overleaf.com/project/67e7bd34ef91cc3d3d928201"
+            ]
+        },
+        {
+            title: "CareLink- Project Contributor",
+            technologies: ".NET, MediatR, Python, ML.NET",
+            description: "I was invited by a university colleague to contribute to the development of a .NET application structured according to Clean Architecture principles. I implemented the Command Pattern and CQRS using MediatR, helping organize the application’s business logic. I also processed datasets from Kaggle using Python and built a regression model in ML.NET to predict the most common diseases, using a pipeline with the SDCA algorithm. Additionally, I wrote several integration tests to validate the functionality of the implemented components.",
+            behind_the_code: "Team collaboration, Clean Architecture, Integration testing, Dataset processing, Time management",
+            links: [
+                "https://github.com/Mareantz/CareLink",
+                "https://healthcaremanagement-fe.vercel.app/home"
+            ]
+        },
+        {
+            title: "Construction Connect",
+            technologies: "PHP, HTML, CSS, JavaScript, MySQL",
+            description: "I helped develop a web platform that makes it easy for people looking for home improvement work to connect with construction companies. Users can post announcements describing the work they need, and companies can respond with their proposals and pricing. The platform also keeps accounts and data secure while making the negotiation process simple and straightforward. Overall, it creates a smooth and friendly experience, helping clients find the right service providers quickly.",
+            behind_the_code: "Team collaboration, Time management, SQL injection prevention, Interface design, Database design, User authentication, Gradient animations, Form handling",
+            links: [
+                "https://github.com/vladluca70/Web-Technologies",
+                "https://www.youtube.com/watch?v=gywogtObqe8&t=8s"
+            ]
+        },
+        {
+            title: "Embedded Arduino Projects",
+            technologies: "C/C++ Arduino",
+            description: "I completed several small Arduino projects using basic components such as the development board, LEDs, and sensors for temperature, humidity, light, motion, buzzer, and push buttons. I combined these components to create various devices with different functionalities, experimenting with multiple sensor-actuator interactions and understanding how hardware and code work together to achieve specific behaviors.",
+            behind_the_code: "Arduino programming, LED control, Sensor integration, Actuator interaction",
+            links: [
+                "---"
+            ]
+        },
+        {
+            title: "MERN Notes Application",
+            technologies: "React, Node.js, Express, HTML, CSS, MongoDB, Postman API",
+            description: "Developed a full-stack notes application that allows users to register, log in, and manage their personal notes. The app supports adding, fetching, and deleting notes, with a smooth communication between frontend and backend through REST API endpoints. The project also includes thorough testing of all endpoints to ensure reliable data handling and user experience.",
+            behind_the_code: "User authentication, JSON data handling, React hooks, CRUD operations, Endpoint testing",
+            links: [
+                "https://github.com/vladluca70/MERN--NotesApp",
+            ]
+        },
+        {
+            title: "MERN- AIHomePredict",
+            technologies: "React, Node.js, Express, HTML, CSS, Python(Pandas, scikit-learn, Flask, joblib), MongoDB",
+            description: "This web application allows users to predict house prices. Users create an account and log in via an Express backend, while house details are submitted through a React form to a Flask server. The Flask server uses a pre-trained logistic regression model to generate predictions and returns the results to the frontend. User accounts are securely managed, with passwords hashed and stored in MongoDB.",
+            behind_the_code: "Full-stack development, Data processing, ML model integration, User authentication",
+            links: [
+                "https://github.com/vladluca70/MERN-AIHomePredict"
+            ]
+        },
+        {
+            title: "CSProblemsPortal",
+            technologies: "",
+            description: "",
+            behind_the_code: "",
+            links: [
+                "",
+                ""
             ]
         },
         {
