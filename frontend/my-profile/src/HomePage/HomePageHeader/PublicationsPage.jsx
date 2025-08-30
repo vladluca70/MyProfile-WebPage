@@ -1,4 +1,5 @@
 import '../../CSSFiles/PublicationsPage.css';
+import HomePageHeader from './HomePageHeader';
 
 function PublicationsPage() {
   const publications = [
@@ -34,6 +35,8 @@ function PublicationsPage() {
   ];
 
   return (
+    <>          
+    <HomePageHeader/>
     <div className="publications-container">
       <h2 className="page-title">My Publications</h2>
       <div className="publications-grid">
@@ -58,6 +61,7 @@ function PublicationsPage() {
         ))}
       </div>
     </div>
+    </>
   );
 }
 

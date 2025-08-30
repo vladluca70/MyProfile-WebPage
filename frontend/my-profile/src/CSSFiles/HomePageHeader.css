@@ -1,0 +1,67 @@
+#home-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #0b1e3d, #1b3a5a, #0f2a4d);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  margin: 1rem auto;
+  max-width: 90%;
+  backdrop-filter: blur(4px);
+}
+
+#home-header a {
+  color: #00cfff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+#home-header a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00cfff;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+#home-header a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#home-header a:hover {
+  color: #00fff7;
+  text-shadow: 0 0 6px #00fff7, 0 0 20px #00cfff;
+  transform: scale(1.1);
+}
+
+#home-header a {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInLink 0.6s forwards;
+}
+
+#home-header a:nth-child(1) { animation-delay: 0.1s; }
+#home-header a:nth-child(2) { animation-delay: 0.2s; }
+#home-header a:nth-child(3) { animation-delay: 0.3s; }
+#home-header a:nth-child(4) { animation-delay: 0.4s; }
+#home-header a:nth-child(5) { animation-delay: 0.5s; }
+#home-header a:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInLink {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

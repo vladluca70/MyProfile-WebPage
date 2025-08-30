@@ -1,4 +1,5 @@
 import '../../CSSFiles/TechnicalSkillsPage.css';
+import HomePageHeader from './HomePageHeader';
 
 function TechnicalSkillsPage() {
   const skills = [
@@ -31,6 +32,8 @@ function TechnicalSkillsPage() {
   ];
 
   return (
+    <>          
+    <HomePageHeader/>
     <div className="skills-container">
       <h2 className="page-title">Technical Skills</h2>
       {skills.map((category, index) => (
@@ -55,6 +58,7 @@ function TechnicalSkillsPage() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

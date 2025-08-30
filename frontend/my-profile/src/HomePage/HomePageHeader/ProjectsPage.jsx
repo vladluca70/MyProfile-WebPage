@@ -1,4 +1,5 @@
 import '../../CSSFiles/ProjectsPage.css'
+import HomePageHeader from './HomePageHeader';
 
 function ProjectsPage() {
     const projects = [
@@ -42,6 +43,8 @@ function ProjectsPage() {
     ];
 
     return (
+        <>
+        <HomePageHeader/>
         <div className="projects-container">
             <h2 className="page-title">My Projects</h2>
             <div className="projects-grid">
@@ -61,6 +64,7 @@ function ProjectsPage() {
                 ))}
             </div>
         </div>
+        </>
     );
 }
 

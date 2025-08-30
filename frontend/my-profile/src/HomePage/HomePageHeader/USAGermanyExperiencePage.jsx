@@ -1,5 +1,6 @@
 import '../../CSSFiles/USAGermanyExperiencePage.css';
 import { useState } from 'react';
+import HomePageHeader from './HomePageHeader';
 
 function USAGermanyExperiencePage() {
   const experiences = {
@@ -32,6 +33,8 @@ function USAGermanyExperiencePage() {
   const countries = Object.keys(experiences);
 
   return (
+    <>
+    <HomePageHeader/>
     <div className="carousel-container">
       <h2 className="page-title">International Experience</h2>
 
@@ -66,6 +69,7 @@ function USAGermanyExperiencePage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

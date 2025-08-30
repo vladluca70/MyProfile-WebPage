@@ -1,7 +1,10 @@
 import '../../CSSFiles/AboutPage.css'
+import HomePageHeader from './HomePageHeader';
 
 function AboutPage() {
   return (
+    <>         
+     <HomePageHeader/>
     <div id="about-page" className="about-container">
       <section className="card fade-in">
         <h2>Skills</h2>
@@ -28,6 +31,7 @@ function AboutPage() {
         <p>🐙 GitHub: <a href="https://github.com/username">github.com/username</a></p>
       </section>
     </div>
+    </>
   );
 }
 

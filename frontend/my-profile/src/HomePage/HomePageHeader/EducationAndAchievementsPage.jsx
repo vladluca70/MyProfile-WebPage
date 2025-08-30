@@ -1,5 +1,6 @@
 import '../../CSSFiles/EducationAndAchievementsPage.css';
 import { useState } from 'react';
+import HomePageHeader from './HomePageHeader';
 
 const diplomaImages = import.meta.glob('../../assets/*.{jpeg,jpg,png}', { eager: true, import: 'default' });
 
@@ -31,6 +32,8 @@ function EducationAndAchievementsPage() {
   ];
 
   return (
+    <>
+    <HomePageHeader/>
     <div className="carousel-container">
       <h2 className="page-title">Achievements</h2>
 
@@ -98,6 +101,7 @@ function EducationAndAchievementsPage() {
         )}
       </div>
     </div>
+    </>
   );
 }
 
