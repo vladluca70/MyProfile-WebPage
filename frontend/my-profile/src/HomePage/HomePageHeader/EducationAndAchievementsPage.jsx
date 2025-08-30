@@ -9,8 +9,9 @@ function EducationAndAchievementsPage() {
   const [currentCategory, setCurrentCategory] = useState('Education');
 
   const educationData = [
-    { school: "University of XYZ", degree: "BSc Computer Science", period: "2018 - 2022", details: "Focused on software engineering and AI." },
-    { school: "High School ABC", degree: "High School Diploma", period: "2014 - 2018", details: "Graduated with honors in science stream." }
+    { school: "Alexandru Ioan Cuza University, Iași", degree: "BSc Computer Science", period: "2022 - 2025", details: "Undergraduate studies in computer science with focus on software engineering, web development, data structures, algorithms, information security and machine learning." },
+    { school: "Petru Rareș National High School, Suceava", degree: "Mathematics-Computer Science, Intensive Computer Science Program", period: "2018 - 2022", details: "High school studies with emphasis on Mathematics, Computer Science, Physics and English." },
+    { school: "Nicolae Labiș General School, Mălini, Suceava", degree: "General Education", period: "2010 - 2018", details: "Studied standard subjects including Mathematics, Romanian, English, French, Geography, History, Chemistry, Physics and Physical Education." }
   ];
 
   const diplomasData = [

@@ -6,24 +6,42 @@ function USAGermanyExperiencePage() {
   const experiences = {
     USA: [
       {
-        company: "TechCorp",
-        position: "Software Engineer",
+        company: "Fairfield by Marriott Inn & Suites North Conway",
+        location: "North Conway, New Hampshire",
+        position: "Room Attendant",
         year: 2023,
-        details: "Worked on cloud infrastructure and optimized performance by 30%."
+        details: "Came to the US through the J-1 Visa program, worked in a multicultural team with colleagues from Romania, Brazil, USA, Mexico and Turkey, met deadlines, adapted quickly to a new work environment, and obtained a Social Security Number (SSN)."
+      },
+            {
+        company: "Residence Inn by Marriott North Conway",
+        location: "North Conway, New Hampshire",
+        position: "Room Attendant",
+        year: 2023,
+        details: "Worked with colleagues from the USA, Romania, Jamaica and Peru, completed all tasks and met deadlines, invited by the manager to join due to high performance at Fairfield by Marriott Inn & Suites, participated through the J-1 Visa program and obtained a Social Security Number (SSN)."
       },
       {
-        company: "InnovateX",
-        position: "Frontend Developer",
-        year: 2022,
-        details: "Built responsive web apps using React and Tailwind CSS."
+        company: "Shalimar of India",
+        location: "North Conway, New Hampshire",
+        position: "Restaurant Utility Worker",
+        year: 2023,
+        details: "Worked with colleagues from India, completed all assigned tasks regardless of responsibility, participated through the J-1 Visa program and obtained a Social Security Number (SSN)."
+      },
+      {
+        company: "Via Roma Pizza & Mediterranean",
+        location: "North Conway, New Hampshire",
+        position: "Restaurant Utility Worker",
+        year: 2023,
+        details: "Worked with colleagues from USA, Brazil, Saudi Arabia and Morocco, completed all assigned tasks regardless of responsibility, participated through the J-1 Visa program and obtained a Social Security Number (SSN)."
       }
+
     ],
     Germany: [
       {
-        company: "AutoSoft",
-        position: "Backend Developer",
-        year: 2021,
-        details: "Developed APIs in Java and improved database efficiency."
+        company: "Inselzeit Spiekeroog Ferienwohnung Ferienhaus Vermietungsservice",
+        location: "Spiekeroog Island, Germany",
+        position: "Room Attendant",
+        year: 2024,
+        details: "Worked effectively in a team with colleagues from Romania, Germany and Vietnam, met deadlines, handled client interactions, adapted quickly to a new environment and obtained a German Steuer ID."
       }
     ]
   };
@@ -60,6 +78,7 @@ function USAGermanyExperiencePage() {
               <div className="timeline-content">
                 <h3>{currentCountry}</h3>
                 <p><strong>Company:</strong> {exp.company}</p>
+                <p><strong>Location:</strong> {exp.location}</p>
                 <p><strong>Position:</strong> {exp.position}</p>
                 <p><strong>Year:</strong> {exp.year}</p>
                 <p>{exp.details}</p>
