@@ -34,7 +34,7 @@ function USAGermanyExperiencePage() {
 
   return (
     <>
-    <HomePageHeader/>
+    <HomePageHeader option="2"/>
     <div className="carousel-container">
       <h2 className="page-title">International Experience</h2>
 

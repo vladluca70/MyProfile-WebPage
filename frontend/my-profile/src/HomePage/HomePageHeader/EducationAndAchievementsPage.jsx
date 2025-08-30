@@ -33,7 +33,7 @@ function EducationAndAchievementsPage() {
 
   return (
     <>
-    <HomePageHeader/>
+    <HomePageHeader option="2"/>
     <div className="carousel-container">
       <h2 className="page-title">Achievements</h2>
 

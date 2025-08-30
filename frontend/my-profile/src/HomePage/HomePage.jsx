@@ -4,7 +4,7 @@ function HomePage(){
 
     return(
         <>
-            <HomePageHeader/>
+            <HomePageHeader option="1"/>
         </>
     )
 }

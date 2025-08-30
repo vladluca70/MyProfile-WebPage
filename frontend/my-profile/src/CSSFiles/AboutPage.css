@@ -1,78 +1,77 @@
-#about-page.about-container {
+.about-container {
   min-height: 100vh;
-  background: linear-gradient(270deg, #0f2027, #203a43, #5dade2, #85c1e9);
-  background-size: 600% 600%;
-  animation: gradientShift 18s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 3rem 2rem;
-  font-family: "Poppins", sans-serif;
-  color: #f5f5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #d4e0ff); /* mov deschis */
+  color: #1a1a2e;
 }
 
-#about-page .card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
+.about-container .card {
+  background: linear-gradient(135deg, #ffffff, #e6f0ff); /* card alb/luminos */
+  border: 2px solid #4b6cb7; /* accent albastru deschis */
+  border-radius: 16px;
   padding: 2rem;
   max-width: 550px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
-#about-page .card:hover {
-  transform: translateY(-12px) scale(1.05) rotateX(4deg);
-  box-shadow: 0 0 30px #5dade2, 0 0 60px #85c1e9;
+.about-container .card:hover {
+  transform: translateY(-8px) scale(1.03) rotateX(2deg);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15), 0 0 15px #4b6cb7, 0 0 30px #85c1e9;
 }
 
-#about-page .card h2 {
+.about-container .card h2 {
   font-size: 2rem;
-  margin-bottom: 1.2rem;
-  color: #ffffff;
+  margin-bottom: 1rem;
+  color: #4b6cb7; /* titlu albastru deschis */
   text-transform: uppercase;
   letter-spacing: 2px;
-  animation: glowText 2s ease-in-out infinite alternate;
+  animation: fadeInDown 1s ease forwards;
 }
 
-#about-page .card ul {
+.about-container .card ul {
   list-style: none;
   padding: 0;
 }
 
-#about-page .card ul li {
+.about-container .card ul li {
   margin: 0.6rem 0;
   font-size: 1.2rem;
   position: relative;
   padding-left: 1.8rem;
   animation: pulse 2.5s infinite;
+  color: #1a1a2e;
 }
 
-#about-page .card ul li::before {
+.about-container .card ul li::before {
   content: "✔";
   position: absolute;
   left: 0;
-  color: #00ffe0;
+  color: #4b6cb7; /* checkmark albastru deschis */
   font-weight: bold;
   animation: bounce 1.5s infinite;
 }
 
-#about-page a {
-  color: #ade8f4;
+.about-container a {
+  color: #4b6cb7; /* linkuri albastre deschise */
   font-weight: bold;
   text-decoration: none;
   transition: all 0.4s ease;
   position: relative;
 }
 
-#about-page a::after {
+.about-container a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -80,37 +79,32 @@
   height: 2px;
   bottom: -3px;
   left: 0;
-  background: #ade8f4;
+  background: #85c1e9; /* accent luminos */
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
 
-#about-page a:hover::after {
+.about-container a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-#about-page .fade-in {
+.about-container .fade-in {
   opacity: 0;
   transform: translateY(40px);
   animation: fadeInUp 1s forwards;
 }
-#about-page .delay-1 { animation-delay: 0.4s; }
-#about-page .delay-2 { animation-delay: 0.8s; }
+.about-container .delay-1 { animation-delay: 0.4s; }
+.about-container .delay-2 { animation-delay: 0.8s; }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
+/* Animatii */
 @keyframes fadeInUp {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes glowText {
-  from { text-shadow: 0 0 12px #5dade2, 0 0 24px #85c1e9; }
-  to { text-shadow: 0 0 24px #00e5ff, 0 0 48px #00e5ff; }
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes bounce {
@@ -122,4 +116,14 @@
   0% { opacity: 1; }
   50% { opacity: 0.7; }
   100% { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container .card {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+  .about-container .card h2 { font-size: 1.5rem; }
+  .about-container .card ul li { font-size: 1rem; padding-left: 1.5rem; }
 }

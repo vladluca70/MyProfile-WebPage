@@ -44,7 +44,7 @@ function ProjectsPage() {
 
     return (
         <>
-        <HomePageHeader/>
+        <HomePageHeader option="2"/>
         <div className="projects-container">
             <h2 className="page-title">My Projects</h2>
             <div className="projects-grid">

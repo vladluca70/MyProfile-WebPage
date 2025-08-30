@@ -4,7 +4,7 @@ import HomePageHeader from './HomePageHeader';
 function AboutPage() {
   return (
     <>         
-     <HomePageHeader/>
+     <HomePageHeader option="2"/>
     <div id="about-page" className="about-container">
       <section className="card fade-in">
         <h2>Skills</h2>
