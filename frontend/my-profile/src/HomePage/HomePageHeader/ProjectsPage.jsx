@@ -51,6 +51,15 @@ function ProjectsPage() {
             ]
         },
         {
+            title: "Neural Networks",
+            technologies: "Python (Tensorflow, Keras, NumPy, PIL/Pillow, )",
+            description: "Trains and evaluates various machine learning models using TensorFlow/Keras. The projects include: linear regression to fit y = 2x + 1, binary classification on 2D data, feedforward networks approximating quadratic and sine functions, binary threshold classification, and a convolutional neural network for classifying cat and dog images.",
+            behind_the_code: "Data preparation, Data processing, Model design, Neural network training, Model evaluation",
+            links: [
+                "https://github.com/vladluca70/CodeMosaic/tree/main/NeuralNetworks"
+            ]
+        },
+        {
             title: "Fox and Hounds – C/C++ Strategy Game",
             technologies: "C/C++ (graphics, cstdlib, time, stdlib, mmsystem, windows, cmath, cstring, iostream, stdio, bits/stdc++, conio, dos)",
             description: "Co-developed a C++ board game with a neon-themed interface, featuring three difficulty levels: Easy (random moves), Medium (a mix of optimal and random moves), and Hard (AI evaluates all possible moves to select the best one). Players can only play as the Hounds against the Fox, with intuitive turn-based gameplay and a dedicated instruction screen for new players.",
@@ -118,34 +127,34 @@ function ProjectsPage() {
         },
         {
             title: "CSProblemsPortal",
-            technologies: "",
-            description: "",
-            behind_the_code: "",
+            technologies: "JavaScript, HTML, CSS",
+            description: "CSProblemsPortal-WebPage is an educational site designed to help students understand introductory computer science concepts through a visual and interactive approach. It serves as a teaching aid for exploring problems, key terms, and practice exercises.",
+            behind_the_code: "Interface design, Problem creation, Difficulty progression",
             links: [
-                "",
-                ""
+                "https://github.com/vladluca70/CSProblemsPortal-WebPage",
+                "https://cs-problems-portal-web-page-v26i-git-main-vladluca70s-projects.vercel.app/"
             ]
         },
         {
-            title: "",
-            technologies: "",
-            description: "",
-            behind_the_code: "",
+            title: "Custom Programming Language",
+            technologies: "C/C++, YACC/Bison",
+            description: "Custom Programming Language is a project where I designed and implemented a programming language from scratch, including parsing, semantic analysis, symbol tables, and AST evaluation. The language supports classes, functions, variables, control structures, and expressions, with a focus on modularity, correctness, and clear error reporting.",
+            behind_the_code: "Grammar design, Parsing logic, Semantic analysis, Symbol table management, AST construction, Expression evaluation, Scope resolution, Function & class handling, Error reporting",
             links: [
-                "",
-                ""
+                "https://github.com/vladluca70/lfac"
             ]
         },
-        {
-            title: "",
-            technologies: "",
-            description: "",
-            behind_the_code: "",
-            links: [
-                "",
-                ""
-            ]
-        }
+
+        // {
+        //     title: "",
+        //     technologies: "",
+        //     description: "",
+        //     behind_the_code: "",
+        //     links: [
+        //         "",
+        //         ""
+        //     ]
+        // }
     ];
 
     return (
