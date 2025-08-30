@@ -33,7 +33,7 @@ function TechnicalSkillsPage() {
 
   return (
     <>          
-    <HomePageHeade option="2"/>
+    <HomePageHeader option="2"/>
     <div className="skills-container">
       <h2 className="page-title">Technical Skills</h2>
       {skills.map((category, index) => (

@@ -17,18 +17,18 @@ function AboutPage() {
         </ul>
       </section>
 
-      <section className="card fade-in delay-1">
-        <h2>Contact</h2>
-        <p>📞 Phone: +40 712 345 678</p>
-        <p>📧 Email: example@email.com</p>
-        <p>📘 Facebook: <a href="https://facebook.com/username">facebook.com/username</a></p>
-        <p>📷 Instagram: <a href="https://instagram.com/username">@username</a></p>
-      </section>
-
       <section className="card fade-in delay-2">
         <h2>Profiles</h2>
-        <p>💼 LinkedIn: <a href="https://linkedin.com/in/username">linkedin.com/in/username</a></p>
-        <p>🐙 GitHub: <a href="https://github.com/username">github.com/username</a></p>
+        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/lucavladut2003/" target='_blank'>linkedin.com/in/lucavladut2003</a></p>
+        <p>🐙 GitHub: <a href="https://github.com/vladluca70?tab=repositories" target='_blank'>github.com/vladluca70</a></p>
+      </section>
+
+      <section className="card fade-in delay-1">
+        <h2>Contact</h2>
+        <p>📞 Phone: +40 762 599 503</p>
+        <p>📧 Email: vladluca70@gmail.com</p>
+        <p>📘 Facebook: <a href="https://www.facebook.com/vlad.luca.73" target='_blank'>facebook.com/vlad.luca.73</a></p>
+        <p>📷 Instagram: <a href="https://www.instagram.com/vladut.luca/" target='_blank'>@vladut.luca</a></p>
       </section>
     </div>
     </>
