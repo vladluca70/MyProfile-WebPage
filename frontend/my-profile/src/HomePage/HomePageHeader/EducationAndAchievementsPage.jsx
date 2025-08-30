@@ -29,7 +29,10 @@ function EducationAndAchievementsPage() {
   ];
 
   const awardsData = [
-    { title: "Best Student Award", year: 2021, description: "Awarded for outstanding academic performance." }
+    { title: "High Distinction – National Baccalaureate Exam", period: 2022, description: ["Mathematics: 10/10", "Computer Science: 9.90/10", "Romanian Language and Literature: 9.75/10" ]},
+    { title: "Multiple Academic Awards", period: "2010-2022", description: ["Almost 100 diplomas from school competitions." ]},
+    { title: "National Euclid Mathematics Competition", period: "2014-2018", description: ["Awarded Second Place Medal, Third Place Medal and Honorable Mention" ]},
+    
   ];
 
   return (
@@ -93,8 +96,12 @@ function EducationAndAchievementsPage() {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h3>{award.title}</h3>
-                  <p><strong>Year:</strong> {award.year}</p>
-                  <p>{award.description}</p>
+                  <p><strong>Period:</strong> {award.period}</p>
+                  <p>
+                    {award.description.map((line, i) => (
+                      <span key={i}>{line}<br /></span>
+                    ))}
+                  </p>
                 </div>
               </div>
             ))}
