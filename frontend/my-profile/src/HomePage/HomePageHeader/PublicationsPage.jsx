@@ -24,12 +24,26 @@ function PublicationsPage() {
       description: "The third volume in this series continues to cover English phrasal verbs, detailing their meanings and providing several example sentences with Romanian translations for each verb.",
       pdf: "/publications/phrasal_verbs_vol_3.pdf"
     },
-        {
-      title: "Phrasal Verbs- Volume 1",
+    {
+      title: "Phrasal Verbs- Volume 4",
       author: "Vlăduț Luca",
       year: 2025,
       description: "The fourth volume in this series completes the collection of English phrasal verbs, explaining their meanings and providing multiple example sentences with Romanian translations for each verb.",
       pdf: "/publications/phrasal_verbs_vol_4.pdf"
+    },
+    {
+      title: "Machine Learning Assistant- English Documentation",
+      author: "Vlăduț Luca",
+      year: 2025,
+      description: "This book provides a comprehensive English documentation of my bachelor's thesis. It explains key concepts of machine learning, several algorithms and their theoretical workings, the technologies used in the project, details about the graphical user interface, backend functionality and data processing. It also guides readers on how to use the application effectively..",
+      pdf: "/publications/MLA_Documentation.pdf"
+    },
+    {
+      title: "Machine Learning Assistant- Romanian Documentation",
+      author: "Vlăduț Luca",
+      year: 2025,
+      description: "This book provides the documentation of my bachelor's thesis, written in Romanian. It covers key concepts of machine learning, several algorithms and their theoretical workings, the technologies used in the project, details about the graphical interface, backend functionality and data processing. It also explains how to use the application.",
+      pdf: "/publications/Documentatie.pdf"
     },
     
   ];
