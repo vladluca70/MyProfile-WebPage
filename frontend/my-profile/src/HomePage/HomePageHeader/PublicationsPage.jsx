@@ -4,32 +4,32 @@ import HomePageHeader from './HomePageHeader';
 function PublicationsPage() {
   const publications = [
     {
-      title: "Publicație 1",
-      author: "Autor 1",
-      year: 2023,
-      description: "O scurtă descriere a publicației 1.",
-      pdf: "/pdfs/Publicatie1.pdf"
+      title: "Phrasal Verbs- Volume 1",
+      author: "Vlăduț Luca",
+      year: 2024,
+      description: "This book provides clear explanations of English phrasal verbs, presenting their multiple meanings and offering several example sentences with Romanian translations for each verb.",
+      pdf: "/publications/phrasal_verbs_vol_1.pdf"
     },
     {
-      title: "Publicație 2",
-      author: "Autor 2",
-      year: 2022,
-      description: "O scurtă descriere a publicației 2.",
-      pdf: "/pdfs/Publicatie2.pdf"
+      title: "Phrasal Verbs- Volume 2",
+      author: "Vlăduț Luca",
+      year: 2025,
+      description: "This continuation of the first volume further explores English phrasal verbs, explaining their meanings and providing multiple example sentences with Romanian translations for each verb.",
+      pdf: "/publications/phrasal_verbs_vol_2.pdf"
     },
     {
-      title: "Publicație 3",
-      author: "Autor 3",
-      year: 2021,
-      description: "O scurtă descriere a publicației 3.",
-      pdf: "/pdfs/Publicatie3.pdf"
+      title: "Phrasal Verbs- Volume 3",
+      author: "Vlăduț Luca",
+      year: 2025,
+      description: "The third volume in this series continues to cover English phrasal verbs, detailing their meanings and providing several example sentences with Romanian translations for each verb.",
+      pdf: "/publications/phrasal_verbs_vol_3.pdf"
     },
         {
-      title: "Publicație 3",
-      author: "Autor 3",
-      year: 2021,
-      description: "O scurtă descriere a publicației 3.",
-      pdf: "/pdfs/Publicatie3.pdf"
+      title: "Phrasal Verbs- Volume 1",
+      author: "Vlăduț Luca",
+      year: 2025,
+      description: "The fourth volume in this series completes the collection of English phrasal verbs, explaining their meanings and providing multiple example sentences with Romanian translations for each verb.",
+      pdf: "/publications/phrasal_verbs_vol_4.pdf"
     },
     
   ];
