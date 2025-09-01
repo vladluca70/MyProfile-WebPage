@@ -1,14 +1,36 @@
 .home-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row; /* două coloane: stânga și dreapta */
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 50px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-left {
+  max-width: 600px;
+  margin-top: 80px; /* mută descrierea și butonul puțin mai jos */
+}
+
+.home-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* aliniere sus în mod implicit */
+}
+
+.home-right .profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  margin-top: 70px; /* mută poza puțin mai jos */
 }
 
 .home-intro {
-  text-align: center;
-  max-width: 700px;
+  text-align: left;
 }
 
 .profile-pic {
@@ -16,7 +38,6 @@
   height: 300px;
   border-radius: 20%;
   object-fit: cover;
-  margin-bottom: 20px;
   border: 3px solid #007bff;
 }
 
@@ -30,12 +51,12 @@
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
+  margin-bottom: 30px; /* distanță față de buton */
 }
 
 /* Buton Contact */
 .contact-container {
   position: relative;
-  margin-top: 30px;
 }
 
 .contact-btn {
@@ -59,8 +80,7 @@
   width: 350px;
   position: absolute;
   top: 45px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0; /* apare sub buton */
   background: white;
   border: 2px solid #007bff;
   border-radius: 20px;
@@ -71,6 +91,7 @@
 
 .contact-popup ul {
   list-style: none;
+  padding: 0;
 }
 
 .contact-popup li {
@@ -85,4 +106,25 @@
 
 .contact-popup a:hover {
   text-decoration: underline;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+}
+
+.home-right .profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  margin-top: 50px;
+  
+  
+  animation: bounce 2s infinite ease-in-out; 
 }
