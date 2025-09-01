@@ -1,7 +1,6 @@
 import '../../CSSFiles/EducationAndAchievementsPage.css';
 import { useState } from 'react';
 import HomePageHeader from './HomePageHeader';
-const diplomaImages = import.meta.glob('../../assets/*.{jpeg,jpg,png}', { eager: true, import: 'default' });
 
 function EducationAndAchievementsPage() {
   const categories = ['Education', 'Diplomas', 'Certificates', 'Awards'];
@@ -16,17 +15,61 @@ function EducationAndAchievementsPage() {
   const diplomasData = [
     { img: '/diplomas/medalie_euclid1.jpg', name: "Programming Contest", year: 2021, score: "1st Place" },
     { img: '/diplomas/medalie_euclid_2.jpg', name: "Programming Contest", year: 2021, score: "1st Place" },
+    { img: '/diplomas/rezultate_bac.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/diploma_bac.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_cangurul_lingvist.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_euclid1.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_euclid3.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_euclid2.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_olimpiada_satelor.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/diploma_matemaicianul_clasei.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_franceza.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_nicolaus_copernic.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_equinox.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_rudolph.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_ciclu_gimnazial.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_gimnaziu.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_ciclu_inferior_liceu.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_liceu.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_fii.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/diploma_absolvire_liceu.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart1.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart2.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart3.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart4.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart5.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart6.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart7.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart8.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_smart9.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+
+
   ];
 
   const certificatesData = [
-    { img: diplomaImages['../../assets/dogcat.jpeg'], name: "React Certification", year: 2022, issuer: "Coursera" }
+        { img: '/diplomas/certificat_certiport.jpg', name: "", year: 20, issuer: "" },
+        { img: '/diplomas/atestat_competente_profesionale.jpg', name: "", year: 20, score: "" },
+        { img: '/diplomas/certificat_competenta_lingvistica.jpg', name: "", year: 20, score: "" },
+
   ];
 
   const awardsData = [
     { title: "High Distinction – National Baccalaureate Exam", period: 2022, description: ["Mathematics: 10/10", "Computer Science: 9.90/10", "Romanian Language and Literature: 9.75/10" ]},
     { title: "Multiple Academic Awards", period: "2010-2022", description: ["Almost 100 diplomas from school competitions." ]},
     { title: "National Euclid Mathematics Competition", period: "2014-2018", description: ["Awarded Second Place Medal, Third Place Medal and Honorable Mention" ]},
-    
   ];
 
   return (
@@ -61,21 +104,19 @@ function EducationAndAchievementsPage() {
           </div>
         )}
 
-        {/* Diplomas & Certificates */}
+        {/* Diplomas & Certificates - New Structure */}
         {(currentCategory === 'Diplomas' || currentCategory === 'Certificates') && (
-          <div className="flip-container">
+          <div className="gallery-container">
             {(currentCategory === 'Diplomas' ? diplomasData : certificatesData).map((item, idx) => (
-              <div key={idx} className="flip-card">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img src={item.img} alt={item.name} />
-                  </div>
-                  <div className="flip-card-back">
-                    <h3>{item.name}</h3>
-                    {item.year && <p><strong>Year:</strong> {item.year}</p>}
-                    {item.score && <p><strong>Score:</strong> {item.score}</p>}
-                    {item.issuer && <p><strong>Issuer:</strong> {item.issuer}</p>}
-                  </div>
+              <div key={idx} className="gallery-card">
+                <div className="image-container">
+                  <img src={item.img} alt={item.name} />
+                </div>
+                <div className="card-details">
+                  <h3>{item.name}</h3>
+                  {item.year && <p><strong>Year:</strong> {item.year}</p>}
+                  {item.score && <p><strong>Score:</strong> {item.score}</p>}
+                  {item.issuer && <p><strong>Issuer:</strong> {item.issuer}</p>}
                 </div>
               </div>
             ))}
