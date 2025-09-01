@@ -53,8 +53,16 @@ function EducationAndAchievementsPage() {
     { img: '/diplomas/concurs_eco_scoala.jpg', name: "", year: 20, score: "" },
     { img: '/diplomas/concurs_ghicitori.jpg', name: "", year: 20, score: "" },
     { img: '/diplomas/concurs.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_clasa_1.jpg', name: "", year: 20, score: "" },
     { img: '/diplomas/absolvire_clasq3.jpg', name: "", year: 20, score: "" },
-    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_clasa1.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_clasa_4.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_clasa2.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_clasa4.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_clasa5.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_clasa6.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/absolvire_clasa7.jpg', name: "", year: 20, score: "" },
+
 
 
   ];
