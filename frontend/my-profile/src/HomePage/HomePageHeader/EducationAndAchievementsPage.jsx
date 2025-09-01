@@ -1,7 +1,6 @@
 import '../../CSSFiles/EducationAndAchievementsPage.css';
 import { useState } from 'react';
 import HomePageHeader from './HomePageHeader';
-
 const diplomaImages = import.meta.glob('../../assets/*.{jpeg,jpg,png}', { eager: true, import: 'default' });
 
 function EducationAndAchievementsPage() {
@@ -15,13 +14,8 @@ function EducationAndAchievementsPage() {
   ];
 
   const diplomasData = [
-    { img: diplomaImages['../../assets/dogcat.jpeg'], name: "Math Olympiad", year: 2020, score: "95/100" },
-    { img: diplomaImages['../../assets/dogcat.jpeg'], name: "Programming Contest", year: 2021, score: "1st Place" },
-    { img: diplomaImages['../../assets/dogcat.jpeg'], name: "Programming Contest", year: 2021, score: "1st Place" },
-    { img: diplomaImages['../../assets/dogcat.jpeg'], name: "Programming Contest", year: 2021, score: "1st Place" },
-    { img: diplomaImages['../../assets/dogcat.jpeg'], name: "Programming Contest", year: 2021, score: "1st Place" },
-    { img: diplomaImages['../../assets/dogcat.jpeg'], name: "Programming Contest", year: 2021, score: "1st Place" }
-
+    { img: '/diplomas/medalie_euclid1.jpg', name: "Programming Contest", year: 2021, score: "1st Place" },
+    { img: '/diplomas/medalie_euclid_2.jpg', name: "Programming Contest", year: 2021, score: "1st Place" },
   ];
 
   const certificatesData = [

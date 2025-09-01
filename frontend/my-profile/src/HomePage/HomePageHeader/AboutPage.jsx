@@ -7,13 +7,18 @@ function AboutPage() {
      <HomePageHeader option="2"/>
     <div id="about-page" className="about-container">
       <section className="card fade-in">
-        <h2>Skills</h2>
+        <h2>Soft Skills</h2>
         <ul>
-          <li>JavaScript / React</li>
-          <li>Python / Machine Learning Basics</li>
-          <li>C# / .NET Clean Architecture</li>
-          <li>SQL & Database Management</li>
-          <li>Linux & Networking</li>
+          <li>Team Collaboration</li>
+          <li>Time Management</li>
+          <li>Quick Adaptability</li>
+          <li>Problem Solving</li>
+          <li>Critical Thinking</li>
+          <li>Creativity</li>
+          <li>Attention To Detail</li>
+          <li>Continuous Learning</li>
+          <li>Project Planning</li>
+          <li>Workflow</li>
         </ul>
       </section>
 
