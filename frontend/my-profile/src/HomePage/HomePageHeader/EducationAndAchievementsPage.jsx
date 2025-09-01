@@ -62,6 +62,23 @@ function EducationAndAchievementsPage() {
     { img: '/diplomas/absolvire_clasa5.jpg', name: "", year: 20, score: "" },
     { img: '/diplomas/absolvire_clasa6.jpg', name: "", year: 20, score: "" },
     { img: '/diplomas/absolvire_clasa7.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_creatii_plastice.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_cu_europa_la_joaca.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_eurojunior2.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_europrescolarul.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_europrescolarul2.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_euroscolarul_clasa2.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/concurs_euroscolarul.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
+    { img: '/diplomas/.jpg', name: "", year: 20, score: "" },
 
 
 
