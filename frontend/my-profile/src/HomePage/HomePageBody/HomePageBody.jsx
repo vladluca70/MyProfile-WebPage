@@ -15,7 +15,7 @@ function HomePage() {
         />
         <h1 className="home-name">Luca Vladut</h1>
         <p className="home-description">
-          Computer Science graduate with a strong interest in software development and machine learning. Experienced in C#, .NET, Python, SQL, and React. Skilled in problem-solving, teamwork, and quickly adapting to new technologies. Passionate about creating efficient applications and continuously improving my skills through real-world projects.
+          Computer Science graduate with experience in Python, React and C/C++, and a strong interest in Machine Learning, Information Security, Software Engineering, Web Development and Mathematics. Skilled in problem-solving, teamwork and quickly adapting to new technologies. I value any opportunity that helps me grow and develop my skills and I am passionate about creating efficient and innovative software solutions.
         </p>
       </div>
 

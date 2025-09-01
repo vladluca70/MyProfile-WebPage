@@ -56,15 +56,16 @@
 
 /* Pop-up Contact */
 .contact-popup {
+  width: 350px;
   position: absolute;
-  top: 50px;
+  top: 45px;
   left: 50%;
   transform: translateX(-50%);
   background: white;
   border: 2px solid #007bff;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 15px 25px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
   z-index: 10;
 }
 
